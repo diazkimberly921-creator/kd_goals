@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore/lite";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDk6gjFUUFoj4cDpANXAyhbEd4nk9EZa4Y",
@@ -10,7 +10,7 @@ const firebaseConfig = {
   messagingSenderId: "1030762672663",
   appId: "1:1030762672663:web:9efbec3213d7bec823a252"
 };
-//
+
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app)
